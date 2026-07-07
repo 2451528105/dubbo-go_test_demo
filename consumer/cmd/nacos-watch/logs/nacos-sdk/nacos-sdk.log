@@ -1,0 +1,1302 @@
+2026-07-07T15:04:41.801+0800	ERROR	nacos_server/nacos_server.go:98	login in err:caused: User nacos not found;
+2026-07-07T15:04:41.809+0800	INFO	naming_http/push_receiver.go:89	udp server start, port: 55510
+2026-07-07T15:04:41.809+0800	INFO	rpc/rpc_client.go:224	[RpcClient.Start] c91c844c-2351-4104-ba77-0661c9ade5f8 try to connect to server on start up, server: {serverIp:120.26.172.16 serverPort:8848 serverGrpcPort:9848}
+2026-07-07T15:04:41.814+0800	INFO	util/common.go:96	Local IP:10.80.40.181
+2026-07-07T15:04:41.987+0800	INFO	rpc/rpc_client.go:234	c91c844c-2351-4104-ba77-0661c9ade5f8 success to connect to server {serverIp:120.26.172.16 serverPort:8848 serverGrpcPort:9848} on start up, connectionId=1783407881998_183.162.222.236_13316
+2026-07-07T15:04:41.987+0800	INFO	naming_grpc/naming_grpc_proxy.go:177	Subscribe Service namespaceId:<test>, serviceName:<providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::>, groupName:<DEFAULT_GROUP>, clusters:<>
+2026-07-07T15:04:42.004+0800	INFO	naming_cache/service_info_holder.go:96	service key:DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService:: was updated to:{"cacheMillis":10000,"hosts":[{"instanceId":"10.80.40.181#27090#null#DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","ip":"10.80.40.181","port":27090,"weight":1,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","metadata":{"application":"dubbo-java-provider-demo-dubbo","category":"providers","check.serializable":"false","deprecated":"false","dubbo":"2.0.2","dynamic":"true","generic":"false","interface":"cn.mobile.ivy.demo.helloworld.HelloWorldService","methods":"sayHello,sayHelloAsync","path":"cn.mobile.ivy.demo.helloworld.HelloWorldService","prefer.serialization":"hessian2,fastjson2","protocol":"tri","proxy":"nativestub","release":"3.3.5","serialize.check.status":"DISABLE","side":"provider","timestamp":"1783407844892"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1783407882136,"clusters":"","name":"providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","groupName":"DEFAULT_GROUP","valid":true,"allIPs":false,"reachProtectionThreshold":false}
+2026-07-07T15:04:42.004+0800	ERROR	cache/disk_cache.go:68	failed to write name cache:logs\nacos-cache\naming\test\DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService:: ,value:{"cacheMillis":10000,"hosts":[{"instanceId":"10.80.40.181#27090#null#DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","ip":"10.80.40.181","port":27090,"weight":1,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","metadata":{"application":"dubbo-java-provider-demo-dubbo","category":"providers","check.serializable":"false","deprecated":"false","dubbo":"2.0.2","dynamic":"true","generic":"false","interface":"cn.mobile.ivy.demo.helloworld.HelloWorldService","methods":"sayHello,sayHelloAsync","path":"cn.mobile.ivy.demo.helloworld.HelloWorldService","prefer.serialization":"hessian2,fastjson2","protocol":"tri","proxy":"nativestub","release":"3.3.5","serialize.check.status":"DISABLE","side":"provider","timestamp":"1783407844892"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1783407882136,"clusters":"","name":"providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","groupName":"DEFAULT_GROUP","valid":true,"allIPs":false,"reachProtectionThreshold":false} ,err:open logs\nacos-cache\naming\test\DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::: The filename, directory name, or volume label syntax is incorrect.
+2026-07-07T15:04:46.847+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:04:50.368+0800	WARN	naming_cache/service_info_holder.go:81	instance list is empty, updateCacheWhenEmpty is set to false, callback is not triggered. service name:providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::
+2026-07-07T15:04:51.882+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:04:56.926+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:05:01.965+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:05:07.013+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:05:12.055+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:05:17.113+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:05:22.161+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:05:27.198+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:05:32.588+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:05:34.757+0800	INFO	naming_cache/service_info_holder.go:96	service key:DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService:: was updated to:{"cacheMillis":10000,"hosts":[{"instanceId":"192.168.22.36#27090#null#DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","ip":"192.168.22.36","port":27090,"weight":1,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","metadata":{"application":"dubbo-java-provider-demo-dubbo","category":"providers","check.serializable":"false","deprecated":"false","dubbo":"2.0.2","dynamic":"true","generic":"false","interface":"cn.mobile.ivy.demo.helloworld.HelloWorldService","methods":"sayHello,sayHelloAsync","path":"cn.mobile.ivy.demo.helloworld.HelloWorldService","prefer.serialization":"hessian2,fastjson2","protocol":"tri","proxy":"nativestub","release":"3.3.5","serialize.check.status":"DISABLE","side":"provider","timestamp":"1783407933690"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1783407934883,"clusters":"","name":"providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","groupName":"DEFAULT_GROUP","valid":true,"allIPs":false,"reachProtectionThreshold":false}
+2026-07-07T15:05:34.757+0800	ERROR	cache/disk_cache.go:68	failed to write name cache:logs\nacos-cache\naming\test\DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService:: ,value:{"cacheMillis":10000,"hosts":[{"instanceId":"192.168.22.36#27090#null#DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","ip":"192.168.22.36","port":27090,"weight":1,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","metadata":{"application":"dubbo-java-provider-demo-dubbo","category":"providers","check.serializable":"false","deprecated":"false","dubbo":"2.0.2","dynamic":"true","generic":"false","interface":"cn.mobile.ivy.demo.helloworld.HelloWorldService","methods":"sayHello,sayHelloAsync","path":"cn.mobile.ivy.demo.helloworld.HelloWorldService","prefer.serialization":"hessian2,fastjson2","protocol":"tri","proxy":"nativestub","release":"3.3.5","serialize.check.status":"DISABLE","side":"provider","timestamp":"1783407933690"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1783407934883,"clusters":"","name":"providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","groupName":"DEFAULT_GROUP","valid":true,"allIPs":false,"reachProtectionThreshold":false} ,err:open logs\nacos-cache\naming\test\DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::: The filename, directory name, or volume label syntax is incorrect.
+2026-07-07T15:05:37.635+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:05:42.693+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:05:46.666+0800	WARN	naming_cache/service_info_holder.go:81	instance list is empty, updateCacheWhenEmpty is set to false, callback is not triggered. service name:providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::
+2026-07-07T15:05:47.767+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:05:52.811+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:05:57.840+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:06:02.999+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:06:04.790+0800	INFO	naming_cache/service_info_holder.go:96	service key:DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService:: was updated to:{"cacheMillis":10000,"hosts":[{"instanceId":"10.80.40.181#27090#null#DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","ip":"10.80.40.181","port":27090,"weight":1,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","metadata":{"application":"dubbo-java-provider-demo-dubbo","category":"providers","check.serializable":"false","deprecated":"false","dubbo":"2.0.2","dynamic":"true","generic":"false","interface":"cn.mobile.ivy.demo.helloworld.HelloWorldService","methods":"sayHello,sayHelloAsync","path":"cn.mobile.ivy.demo.helloworld.HelloWorldService","prefer.serialization":"hessian2,fastjson2","protocol":"tri","proxy":"nativestub","release":"3.3.5","serialize.check.status":"DISABLE","side":"provider","timestamp":"1783407963666"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1783407964920,"clusters":"","name":"providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","groupName":"DEFAULT_GROUP","valid":true,"allIPs":false,"reachProtectionThreshold":false}
+2026-07-07T15:06:04.790+0800	ERROR	cache/disk_cache.go:68	failed to write name cache:logs\nacos-cache\naming\test\DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService:: ,value:{"cacheMillis":10000,"hosts":[{"instanceId":"10.80.40.181#27090#null#DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","ip":"10.80.40.181","port":27090,"weight":1,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","metadata":{"application":"dubbo-java-provider-demo-dubbo","category":"providers","check.serializable":"false","deprecated":"false","dubbo":"2.0.2","dynamic":"true","generic":"false","interface":"cn.mobile.ivy.demo.helloworld.HelloWorldService","methods":"sayHello,sayHelloAsync","path":"cn.mobile.ivy.demo.helloworld.HelloWorldService","prefer.serialization":"hessian2,fastjson2","protocol":"tri","proxy":"nativestub","release":"3.3.5","serialize.check.status":"DISABLE","side":"provider","timestamp":"1783407963666"},"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}],"checksum":"","lastRefTime":1783407964920,"clusters":"","name":"providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::","groupName":"DEFAULT_GROUP","valid":true,"allIPs":false,"reachProtectionThreshold":false} ,err:open logs\nacos-cache\naming\test\DEFAULT_GROUP@@providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::: The filename, directory name, or volume label syntax is incorrect.
+2026-07-07T15:06:08.034+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:06:13.298+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:06:15.702+0800	WARN	naming_cache/service_info_holder.go:81	instance list is empty, updateCacheWhenEmpty is set to false, callback is not triggered. service name:providers:cn.mobile.ivy.demo.helloworld.HelloWorldService::
+2026-07-07T15:06:18.333+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:06:23.366+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:06:28.400+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:06:33.448+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:06:38.479+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:06:43.523+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:06:48.555+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:06:53.598+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:06:58.631+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:07:03.694+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:07:08.726+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:07:13.760+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:07:18.786+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:07:23.822+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:07:28.853+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:07:33.974+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:07:39.011+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:07:44.065+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:07:49.100+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:07:54.140+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:08:00.188+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:08:06.242+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:08:11.283+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:08:16.356+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:08:21.451+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:08:26.826+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:08:31.868+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:08:36.918+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:08:41.964+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:08:47.016+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:08:53.060+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:08:58.377+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:09:03.406+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:09:08.450+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:09:13.502+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:09:18.618+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:09:23.662+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:09:28.730+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:09:33.781+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:09:38.830+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:09:43.891+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:09:48.933+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:09:53.978+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:09:59.039+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:10:04.395+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:10:09.434+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:10:14.503+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:10:19.547+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:10:24.601+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:10:29.647+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:10:34.688+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:10:39.721+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:10:44.795+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:10:49.840+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:10:55.162+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:11:00.212+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:11:05.536+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:11:10.576+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:11:15.638+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:11:21.678+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:11:27.762+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:11:33.811+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:11:38.857+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:11:45.403+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:11:50.459+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:11:55.497+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:12:00.535+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:12:05.588+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:12:10.956+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:12:15.997+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:12:21.025+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:12:26.059+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:12:31.097+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:12:36.128+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:12:41.173+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:12:46.217+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:12:51.244+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:12:56.288+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:13:01.353+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:13:06.384+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:13:11.421+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:13:16.452+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:13:21.486+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:13:26.545+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:13:31.588+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:13:36.620+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:13:41.644+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:13:46.669+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:13:51.704+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:13:56.748+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:14:01.772+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:14:06.800+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:14:11.872+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:14:16.899+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:14:21.986+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:14:27.021+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:14:32.060+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:14:37.090+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:14:42.143+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:14:47.234+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:14:52.262+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:14:57.301+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:15:02.336+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:15:07.367+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:15:12.492+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:15:17.517+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:15:22.723+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:15:27.750+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:15:32.779+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:15:37.809+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:15:42.844+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:15:47.878+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:15:52.908+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:15:57.943+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:16:02.978+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:16:08.012+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:16:13.040+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:16:18.069+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:16:23.103+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:16:28.135+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:16:33.166+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:16:38.195+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:16:43.224+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:16:48.259+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393
+2026-07-07T15:16:53.290+0800	ERROR	security/security_proxy.go:90	login has error caused: User nacos not found;
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:154
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).Login
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:106
+github.com/nacos-group/nacos-sdk-go/v2/common/security.(*AuthClient).AutoRefresh.func1
+	C:/Go/bin/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.2.5/common/security/security_proxy.go:88
+runtime.goexit
+	C:/Go/src/runtime/asm_386.s:1393

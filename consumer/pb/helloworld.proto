@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-package pb;
+package cn.mobile.ivy.demo.helloworld;
 
 option go_package = "dgdemo/pb;pb";
 
 service HelloWorldService {
-  rpc SayHello(HelloRequest) returns (HelloReply);
+  rpc sayHello(HelloRequest) returns (HelloReply);
 }
 
 message HelloRequest {

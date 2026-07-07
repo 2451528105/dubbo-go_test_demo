@@ -25,7 +25,7 @@ const _ = triple_protocol.IsAtLeastVersion0_1_0
 
 const (
 	// HelloWorldServiceName is the fully-qualified name of the HelloWorldService service.
-	HelloWorldServiceName = "pb.HelloWorldService"
+	HelloWorldServiceName = "cn.mobile.ivy.demo.helloworld.HelloWorldService"
 )
 
 // These constants are the fully-qualified names of the RPCs defined in this package. They're
@@ -36,22 +36,22 @@ const (
 // reflection-formatted method names, remove the leading slash and convert the remaining slash to a
 // period.
 const (
-	// HelloWorldServiceSayHelloProcedure is the fully-qualified name of the HelloWorldService's SayHello RPC.
-	HelloWorldServiceSayHelloProcedure = "/pb.HelloWorldService/SayHello"
+	// HelloWorldServiceSayHelloProcedure is the fully-qualified name of the HelloWorldService's sayHello RPC.
+	HelloWorldServiceSayHelloProcedure = "/cn.mobile.ivy.demo.helloworld.HelloWorldService/sayHello"
 )
 
 var (
 	_ HelloWorldService = (*HelloWorldServiceImpl)(nil)
 )
 
-// HelloWorldService is a client for the pb.HelloWorldService service.
+// HelloWorldService is a client for the cn.mobile.ivy.demo.helloworld.HelloWorldService service.
 type HelloWorldService interface {
 	SayHello(ctx context.Context, req *HelloRequest, opts ...client.CallOption) (*HelloReply, error)
 }
 
-// NewHelloWorldService constructs a client for the pb.HelloWorldService service.
+// NewHelloWorldService constructs a client for the cn.mobile.ivy.demo.helloworld.HelloWorldService service.
 func NewHelloWorldService(cli *client.Client, opts ...client.ReferenceOption) (HelloWorldService, error) {
-	conn, err := cli.DialWithInfo("pb.HelloWorldService", &HelloWorldService_ClientInfo, opts...)
+	conn, err := cli.DialWithInfo("cn.mobile.ivy.demo.helloworld.HelloWorldService", &HelloWorldService_ClientInfo, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -71,22 +71,22 @@ type HelloWorldServiceImpl struct {
 
 func (c *HelloWorldServiceImpl) SayHello(ctx context.Context, req *HelloRequest, opts ...client.CallOption) (*HelloReply, error) {
 	resp := new(HelloReply)
-	if err := c.conn.CallUnary(ctx, []interface{}{req}, resp, "SayHello", opts...); err != nil {
+	if err := c.conn.CallUnary(ctx, []interface{}{req}, resp, "sayHello", opts...); err != nil {
 		return nil, err
 	}
 	return resp, nil
 }
 
 var HelloWorldService_ClientInfo = client.ClientInfo{
-	InterfaceName: "pb.HelloWorldService",
-	MethodNames:   []string{"SayHello"},
+	InterfaceName: "cn.mobile.ivy.demo.helloworld.HelloWorldService",
+	MethodNames:   []string{"sayHello"},
 	ConnectionInjectFunc: func(dubboCliRaw interface{}, conn *client.Connection) {
 		dubboCli := dubboCliRaw.(*HelloWorldServiceImpl)
 		dubboCli.conn = conn
 	},
 }
 
-// HelloWorldServiceHandler is an implementation of the pb.HelloWorldService service.
+// HelloWorldServiceHandler is an implementation of the cn.mobile.ivy.demo.helloworld.HelloWorldService service.
 type HelloWorldServiceHandler interface {
 	SayHello(context.Context, *HelloRequest) (*HelloReply, error)
 }
@@ -100,11 +100,11 @@ func SetProviderHelloWorldService(srv common.RPCService) {
 }
 
 var HelloWorldService_ServiceInfo = server.ServiceInfo{
-	InterfaceName: "pb.HelloWorldService",
+	InterfaceName: "cn.mobile.ivy.demo.helloworld.HelloWorldService",
 	ServiceType:   (*HelloWorldServiceHandler)(nil),
 	Methods: []server.MethodInfo{
 		{
-			Name: "SayHello",
+			Name: "sayHello",
 			Type: constant.CallUnary,
 			ReqInitFunc: func() interface{} {
 				return new(HelloRequest)
